@@ -1,7 +1,9 @@
+import WhatsappLogo from '../assets/whatsapp-logo.webp'
+
 export function WppButton() {
   return(
     <aside className='whatsapp'>
-      <img className='whatsapp-img' src="/src/assets/whatsapp-logo.webp" alt="Logo de WhatsApp" />
+      <img className='whatsapp-img' src={WhatsappLogo} alt="Logo de WhatsApp" />
     </aside>
   )
 }
