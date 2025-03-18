@@ -33,7 +33,7 @@ export function SelectedProducts({ product, funcion }) {
       {product && (
         <div className="clicked" onClick={funcion}>
           <h2 className="clicked-product">
-            El producto seleccionado es: {productSelected?.name}
+            {productSelected?.name}
           </h2>
           <p className="clicked-price">${productSelected?.price}</p>
           <button onClick={handleClick} className="clicked-buy-button">
