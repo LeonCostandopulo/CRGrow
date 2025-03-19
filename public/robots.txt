@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /blog/
+Disallow: /admin/
+Disallow: /carrito/
+Disallow: /borradores/
+
+Sitemap: https://tusitio.com/sitemap.xml
