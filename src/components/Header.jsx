@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className='header'>
+    <header id="sticky-parallax-header" className='header'>
       <img className='header-logo' src="/logo-icon.webp" alt="Logo de la empresa" />
       <nav className='header-nav'>
         <ul className='header-nav-list'>

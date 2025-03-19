@@ -6,6 +6,45 @@
 	--white-color: #f1fff0;
 	--gray-green-color: #415341;
 }
+
+
+/* *** animación  *** */
+body{
+	padding-top: 100vh ;
+}
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100vh;
+		font-size: calc(4vw + 1em);
+	}
+	to {
+		background-color: #222;
+		background-position: 50% 70%;
+		height: 10vh;
+		font-size: 1em;
+	}
+}
+
+#sticky-parallax-header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	
+	animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 85vh;
+	
+	background-image: url("/src/assets/imgen5.jpg");
+	background-size: cover;
+	background-position: 50% 0;
+	background-blend-mode: soft-light;
+}	
+@media screen and (min-width: 500px) {
+	#sticky-parallax-header {
+		background-image: url("/src/assets/imagePrueba.jpg");
+	}
+}
 /* *** HEADER *** */
 .header{
 	display: flex;
@@ -16,6 +55,7 @@
 	top: 0;
 	background-color: #78fa0301;
 	backdrop-filter: blur(5px);
+	justify-self: center;
 }
 .header-nav{
 	margin-right: .8rem;
@@ -23,6 +63,7 @@
 .header-logo{
 	width:  4.3rem;
 	height: 2rem;
+	margin-right: 5.5rem;
 }
 .header-nav-list{
 	display: flex;
