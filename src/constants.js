@@ -4,7 +4,7 @@ export const products = [
     name: 'Panel LED 100W',
     price: '70000',
     type: 'iluminacion',
-    img: ".../src/assets/lamparaprueba.webp",
+    img: "../public/lamparaprueba.webp",
   },
   {
     id:   'panel-led-200w',
@@ -109,7 +109,7 @@ export const products = [
     name: 'Carpa 70x70cm x1.80m',
     price: '80000',
     type: 'carp',
-    img: "../public/lamparaprueba.webp",
+    img: ".../src/assets/lamparaprueba.webp",
   },
   {
     id:   'carpa-80x80x180',
