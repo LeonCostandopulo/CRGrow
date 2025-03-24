@@ -4,7 +4,7 @@ export const products = [
     name: 'Panel LED 100W',
     price: '70000',
     type: 'iluminacion',
-    img: "../public/lamparaprueba.webp",
+    img: "/lamparaprueba.webp",
   },
   {
     id:   'panel-led-200w',
