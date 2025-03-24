@@ -168,7 +168,7 @@ body{
 	align-items: center;
 	border-radius: .65rem;
 	color: var(--white-color);
-	width: clamp(290px, 92%, 450px);
+	width: clamp(290px, 92%, 458px);
 }
 .kits-kit-title{
 	font: 1.2rem ; 
@@ -196,6 +196,12 @@ body{
 	.kits-buy-button{
 		border-bottom-right-radius: 0 ;
 		border-bottom-left-radius: 0 ;
+	}
+}
+@media screen and (min-width: 800px) {
+	.kits-kit{
+		height: 290px;
+		padding: 2rem 1rem;
 	}
 }
 /* *** PACKS (especificos) *** */
