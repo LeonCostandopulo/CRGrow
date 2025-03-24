@@ -1,5 +1,4 @@
 import { CustomProducts } from "./CustomProducts"
-import { BrowserRouter} from "react-router-dom"
 
 export function CustomKitSection() {
   const textos = {
@@ -8,13 +7,10 @@ export function CustomKitSection() {
     CustomProducts2 : "Carpas"
   }
   return (
-    <section className="custom">
+    <section id="custom" className="custom ">
       <h2 className="custom-title">{textos.h2}</h2>
-      <BrowserRouter future={{ v7_startTransition: true }}>
-          <CustomProducts typeRequired='iluminacion'>{textos.CustomProducts1}</CustomProducts>
-          <CustomProducts typeRequired='carp'>{textos.CustomProducts2}</CustomProducts>
-
-      </BrowserRouter>
+        <CustomProducts typeRequired='iluminacion'>{textos.CustomProducts1}</CustomProducts>
+        {/* <CustomProducts typeRequired='carp'>{textos.CustomProducts2}</CustomProducts> */}
     </section>
   )
 }

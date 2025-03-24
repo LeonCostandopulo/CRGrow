@@ -1,9 +1,9 @@
 
 export function Footer() {
-  const footerText = "Desarrollado por León Webs xd"
+  const footerText = "Desarrollado por "
   return (
     <footer className="footer">
-      <p>{footerText}</p>
+      <p>{footerText} <a href="https://www.linkedin.com/in/leoncostandopulo/?" target="_blank">León Costandopulo</a> </p>
     </footer>
   )
 }

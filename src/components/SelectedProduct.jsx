@@ -10,7 +10,7 @@ function getProductsOnCart() {
   return Array.from(document.querySelectorAll(".clicked-selected-product"));
 }
 
-export function SelectedProducts({ product, funcion }) {
+export function SelectedProducts({ product, funcion}) {
   const productSelected = getProduct(product);
 
   function isProductSelected() {
@@ -21,29 +21,32 @@ export function SelectedProducts({ product, funcion }) {
     );
   }
 
-  function handleClick() {
+  function handleClick2() {
     const selected = document.getElementById(`${product}`);
     if (selected) {
+      selected.style.scale = "1";
       selected.classList.toggle('clicked-selected-product');
     }
+
   }
 
   return (
     <>
-      {product && (
-        <div className="clicked" onClick={funcion}>
-          <h2 className="clicked-product">
-            {productSelected?.name}
-          </h2>
-          <p className="clicked-price">${productSelected?.price}</p>
-          <button onClick={handleClick} className="clicked-buy-button">
-            {isProductSelected() ? 'Sacar del carrito' : 'Meter al carrito'}
-          </button>
-          <p className="clicked-aclaration">
-            Toca en cualquier lugar para volver
-          </p>
+        <div className='clicked-container' onClick={funcion}>
+          <div id={product} className="clicked" >
+            <img className="clicked-img" src={productSelected?.img} alt={productSelected?.name} />
+            <h2 className="clicked-product">
+              {productSelected?.name}
+            </h2>
+            <p className="clicked-price">${productSelected?.price}</p>
+            <button onClick={handleClick2} className="clicked-buy-button">
+              {isProductSelected() ? 'Sacar del carrito' : 'Meter al carrito'}
+            </button>
+            <p className="clicked-aclaration">
+              Toca en cualquier lugar para volver
+            </p>
+          </div>
         </div>
-      )}
     </>
   );
 }
