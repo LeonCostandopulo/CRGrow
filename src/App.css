@@ -12,21 +12,22 @@
 
 /* *** animación  *** */
 body{
-	padding-top: 100dvh ;
+	padding-top: 98.5dvh ;
 }
-@keyframes sticky-parallax-header-move-and-size {
+@keyframes sticky-parallax-header-move-and-size{
 	from {
 		background-color: #222222aa;
 		background-position: 50% 0;
-		height: 100vh;
 		font-size: calc(4vw + 1em);
+
+		height: 100dvh;
 	}
 	to {
 		background-color: #181818; 
 		background-position: 50% 70%;
-		height: 10vh;
 		font-size: 1em;
-		
+
+		height: 10dvh;
 	}
 }
 @keyframes header-logo-size {
@@ -42,6 +43,7 @@ body{
 	position: fixed;
 	top: 0;
 	display: flex;
+	box-sizing: border-box;
 	
 	animation: sticky-parallax-header-move-and-size linear forwards;
 	animation-timeline: scroll();
@@ -51,6 +53,7 @@ body{
 	background-size: cover;
 	background-position: 50% 0;
 	background-blend-mode: soft-light;
+	z-index: 100;
 }	
 @media screen and (min-width: 500px) {
 	#sticky-parallax-header {
@@ -63,17 +66,11 @@ body{
 }
 /* *** HEADER *** */
 .header{
-	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	position: sticky;
-	top: 0;
 	background-color: #78fa0301;
-	/* filter: brightness(70%); */
 	justify-self: center;
 	font-family:  'Trebuchet MS', sans-serif;
-
 }
 .header-nav{
 	margin-right: .8rem;
@@ -244,7 +241,6 @@ body{
 	margin-bottom: 1rem;
 	border-radius: .7rem;
 	background: linear-gradient(#45eb63, #1cc93f);
-	z-index: 20;
 
 	animation: expand linear forwards;
 	animation-timeline: scroll();
@@ -254,7 +250,6 @@ body{
 	background-color: #fff0;
 	border-radius: .7rem;
 	width: 100%;
-	z-index: 20;
 }
 @keyframes expand {
 	to{
@@ -421,7 +416,27 @@ body{
 	text-align: center;
 	padding: 4rem 1rem;
 }
+@media (prefers-reduced-motion: no-preference) and (-webkit-min-device-pixel-ratio:0){
+	@-webkit-keyframes sticky-parallax-header-move-and-size-webkit{
+		from {
+			background-color: #222222aa;
+			background-position: 50% 0;
+			font-size: calc(4vw + 1em);
 
+			height: 100dvh;
+		}
+		to {
+			background-color: #181818; 
+			background-position: 50% 70%;
+			font-size: 1em;
+
+			height: 10dvh;
+		}
+	}
+	#sticky-parallax-header {
+		animation: sticky-parallax-header-move-and-size-webkit linear forwards;
+	}
+}
 @media (prefers-reduced-motion: reduce) {
 	body{	
 		padding-top: 9dvh;
