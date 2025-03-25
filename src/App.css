@@ -48,11 +48,10 @@ body{
 	animation-timeline: scroll();
 	animation-range: 0vh 85vh;
 	
-	background-image: url("/src/assets/mariabecerrajuana.webp");
+	background-image: url("/src/assets/mariabecerrajuana2.webp") ;
 	background-size: cover;
 	background-position: 50% 0;
 	background-blend-mode: soft-light;
-	z-index: 100;
 }	
 @media screen and (min-width: 500px) {
 	#sticky-parallax-header {
@@ -75,6 +74,7 @@ body{
 	/* filter: brightness(70%); */
 	justify-self: center;
 	font-family:  'Trebuchet MS', sans-serif;
+
 }
 .header-nav{
 	margin-right: .8rem;
@@ -244,7 +244,7 @@ body{
 	width: 4rem;
 	margin-bottom: 1rem;
 	border-radius: .7rem;
-	background: linear-gradient(#42e762, #1cc93f);
+	background: linear-gradient(#45eb63, #1cc93f);
 	z-index: 20;
 
 	animation: expand linear forwards;
