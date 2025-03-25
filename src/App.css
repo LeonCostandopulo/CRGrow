@@ -425,13 +425,25 @@ body{
 
 @media (prefers-reduced-motion: reduce){
 	body{
-		padding: -100dvh;
+		padding-top: 0;
 		background-color: #44010152;
+	}
+	.header-logo-container{
+		width: 20%;
+	}
+	.whatsapp{
+		animation: none;
 	}
 }
 @media (prefers-reduced-motion: no-preference){
 	body{
-		padding: -100dvh;
+		padding-top: 0;
 		background-color: #3d440183;
+	}
+	.header-logo-container{
+		width: 20%;
+	}
+	.whatsapp{
+		animation: none;
 	}
 }
