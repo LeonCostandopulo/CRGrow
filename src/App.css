@@ -37,7 +37,6 @@ body{
 		width: 20%;
 	}
 }
-
 #sticky-parallax-header {
 	width: 100%;
 	position: fixed;
@@ -423,9 +422,9 @@ body{
 	padding: 4rem 1rem;
 }
 
-@media (prefers-reduced-motion: reduce){
-	body{
-		padding-top: 0;
+@media (prefers-reduced-motion: reduce) {
+	body{	
+		padding-top: 9dvh;
 		background-color: #44010152;
 	}
 	.header-logo-container{
@@ -434,16 +433,12 @@ body{
 	.whatsapp{
 		animation: none;
 	}
-}
-@media (prefers-reduced-motion: no-preference){
-	body{
-		padding-top: 0;
-		background-color: #3d440183;
-	}
-	.header-logo-container{
-		width: 20%;
-	}
-	.whatsapp{
+	#sticky-parallax-header {
+		background-color: #181818; 
+		background-position: 50% 70%;
+		height: 10vh;
+		font-size: 1em;
+		position: fixed;
 		animation: none;
 	}
 }
