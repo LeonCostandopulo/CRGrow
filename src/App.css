@@ -426,10 +426,12 @@ body{
 @media (prefers-reduced-motion: reduce){
 	body{
 		padding: -100dvh;
+		background-color: #44010152;
 	}
 }
 @media (prefers-reduced-motion: no-preference){
 	body{
 		padding: -100dvh;
+		background-color: #01244452;
 	}
 }
