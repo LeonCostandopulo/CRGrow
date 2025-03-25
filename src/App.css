@@ -12,7 +12,7 @@
 
 /* *** animación  *** */
 body{
-	padding-top: 100vh ;
+	padding-top: 100dvh ;
 }
 @keyframes sticky-parallax-header-move-and-size {
 	from {
@@ -421,4 +421,15 @@ body{
 	color: var(--white-color);
 	text-align: center;
 	padding: 4rem 1rem;
+}
+
+@media (prefers-reduced-motion: reduce){
+	body{
+		padding: -100dvh;
+	}
+}
+@media (prefers-reduced-motion: no-preference){
+	body{
+		padding: -100dvh;
+	}
 }
