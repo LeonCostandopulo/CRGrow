@@ -13,8 +13,9 @@
 /* *** animación  *** */
 body{
 	padding-top: 98.5dvh ;
+	
 }
-@keyframes sticky-parallax-header-move-and-size{
+@keyframes sticky-parallax-header-move-and-size {
 	from {
 		background-color: #222222aa;
 		background-position: 50% 0;
@@ -416,25 +417,14 @@ body{
 	text-align: center;
 	padding: 4rem 1rem;
 }
-@media (prefers-reduced-motion: no-preference) and (-webkit-min-device-pixel-ratio:0){
-	@-webkit-keyframes sticky-parallax-header-move-and-size-webkit{
-		from {
-			background-color: #222222aa;
-			background-position: 50% 0;
-			font-size: calc(4vw + 1em);
 
-			height: 100dvh;
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+	@supports (-webkit-overflow-scrolling: touch){
+		#sticky-parallax-header {
+			animation: sticky-parallax-header-move-and-size linear forwards;
+			animation-timeline: scroll();
+			animation-range: 0vh 85vh;
 		}
-		to {
-			background-color: #181818; 
-			background-position: 50% 70%;
-			font-size: 1em;
-
-			height: 10dvh;
-		}
-	}
-	#sticky-parallax-header {
-		animation: sticky-parallax-header-move-and-size-webkit linear forwards;
 	}
 }
 @media (prefers-reduced-motion: reduce) {
