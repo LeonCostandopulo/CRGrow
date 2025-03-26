@@ -418,8 +418,8 @@ body{
 	padding: 4rem 1rem;
 }
 
-@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-	@supports (-webkit-overflow-scrolling: touch){
+@supports (-webkit-overflow-scrolling: touch){
+	@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
 		#sticky-parallax-header {
 			animation: sticky-parallax-header-move-and-size linear forwards;
 			animation-timeline: scroll();
