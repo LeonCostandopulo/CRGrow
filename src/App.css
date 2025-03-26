@@ -423,7 +423,6 @@ body{
 		@media (prefers-reduced-motion: no-preference) {
 			body{	
 				padding-top: 9dvh;
-				background-color: #11cf0a46;
 			}
 			.header-logo-container{
 				width: 20%;
@@ -443,7 +442,6 @@ body{
 	}
 	body{	
 		padding-top: 9dvh;
-		background-color: #cf0a0a46;
 	}
 	.header-logo-container{
 		width: 20%;
@@ -452,7 +450,6 @@ body{
 		animation: none;
 	}
 	#sticky-parallax-header {
-		background-color: #181818; 
 		background-position: 50% 70%;
 		height: 10vh;
 		font-size: 1em;
@@ -483,7 +480,7 @@ body{
 
 /*
 git add .
-git commit -m "v2"
+git commit -m "v4"
 git push
 
 */
