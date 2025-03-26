@@ -422,25 +422,42 @@ body{
 	@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
 		@media (prefers-reduced-motion: no-preference) {
 			body{	
-				background-color: #cf0a0a8c;
+				padding-top: 9dvh;
+				background-color: #11cf0a46;
 			}
-		}
-		body{	
-			background-color: #bbcf0a8c;
-		}
-	}
-	@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-		body{	
-			background-color: #2bcf0a8c;
-		}
-	}
-	@media (prefers-reduced-motion: no-preference) {
-		body{	
-			background-color: #0a2ecf8c;
+			.header-logo-container{
+				width: 20%;
+			}
+			.whatsapp{
+				animation: none;
+			}
+			#sticky-parallax-header {
+				background-color: #181818; 
+				background-position: 50% 70%;
+				height: 10vh;
+				font-size: 1em;
+				position: fixed;
+				animation: none;
+			}
 		}
 	}
 	body{	
-		background-color: #c80acf8c;
+		padding-top: 9dvh;
+		background-color: #cf0a0a46;
+	}
+	.header-logo-container{
+		width: 20%;
+	}
+	.whatsapp{
+		animation: none;
+	}
+	#sticky-parallax-header {
+		background-color: #181818; 
+		background-position: 50% 70%;
+		height: 10vh;
+		font-size: 1em;
+		position: fixed;
+		animation: none;
 	}
 }
 @media (prefers-reduced-motion: reduce) {
@@ -468,4 +485,5 @@ body{
 git add .
 git commit -m "v1"
 git push
+
 */
