@@ -426,6 +426,9 @@ body{
 			animation-range: 0vh 85vh;
 		}
 	}
+	body{	
+		background-color: #0ab1cf8c;
+	}
 }
 @media (prefers-reduced-motion: reduce) {
 	body{	
