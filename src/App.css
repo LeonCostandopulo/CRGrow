@@ -421,13 +421,25 @@ body{
 @supports (-webkit-overflow-scrolling: touch){
 	@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
 		#sticky-parallax-header {
-			animation: sticky-parallax-header-move-and-size linear forwards;
-			animation-timeline: scroll();
-			animation-range: 0vh 85vh;
+			animation: sticky-parallax-header-move-and-size linear forwards !important;
+			animation-timeline: scroll() ;
+			animation-range: 0vh 85vh !important;
+		}
+		body{	
+			background-color: #0ab1cf8c;
+		}
+		@media (prefers-reduced-motion: no-preference) {
+			#sticky-parallax-header {
+				animation: sticky-parallax-header-move-and-size linear forwards !important;
+				animation-timeline: scroll() ;
+				animation-range: 0vh 85vh !important;
+			}
 		}
 	}
-	body{	
-		background-color: #0ab1cf8c;
+	#sticky-parallax-header {
+		animation: sticky-parallax-header-move-and-size linear forwards !important;
+		animation-timeline: scroll() ;
+		animation-range: 0vh 85vh !important;
 	}
 }
 @media (prefers-reduced-motion: reduce) {
