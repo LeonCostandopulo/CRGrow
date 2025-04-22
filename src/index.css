@@ -24,8 +24,12 @@
   box-sizing: border-box;
 }
 html{
-	background: linear-gradient(var(--body-bg-color-black), var(--body-bg-color-green));
+  background: linear-gradient(var(--body-bg-color-black), var(--body-bg-color-green));
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 button, a{
   user-select: none;
