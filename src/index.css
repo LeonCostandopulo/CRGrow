@@ -26,9 +26,10 @@
 html{
   background: linear-gradient(var(--body-bg-color-black), var(--body-bg-color-green));
   scroll-behavior: smooth;
-  margin-inline: auto;
 }
 button, a{
   user-select: none;
   cursor: pointer;
 }
+main{
+  margin-inline: auto;
